@@ -3,7 +3,7 @@
     <div class="vertical-center" v-if="!init">
       <vs-row align="center" justify="center">
         <vs-col w="12" class="main-t">
-          <span>Kilala mo ba siya?</span>
+          <span>Kilala mo ba sila?</span>
         </vs-col>
       </vs-row>
 

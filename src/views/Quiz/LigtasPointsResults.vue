@@ -2,7 +2,7 @@
   <div class="center grid mt-5">
     <div class="row center-xs">
       <div class="col-xs-12 sub-t">
-        <span class="text-anim-grd text-emphasis-brd">LIGTAS POINTS METRE</span>
+        <span class="text-anim-grd text-emphasis-brd">LIGTAS POINTS</span>
       </div>
       <div class="row center-xs">
         <h2>You've got {{ result_ }}%</h2>
@@ -39,11 +39,30 @@
           alt="noice"
         />
       </div>
-
-      <vs-button icon color="facebook">
-        <i class="bx bxl-facebook-square"></i>
-      </vs-button>
     </div>
+
+    <div class="fb-share-button" 
+    data-href="https://mavigator-mavigator.vercel.app/ligtas_points_meter" 
+    data-layout="button_count">
+    </div>
+
+    <vs-dialog not-close prevent-close v-model="active">
+      <template #header>
+        <h4 class="not-margin text-center">Thank you for playing<br /><b>LIGTAS POINTS METRE QUIZ GAME</b></h4>
+      </template>
+
+      This simple quiz app is developed to measure your "LIGTAS POINTS", Ligtas Points is not focused about the salvation but the power how you really know the one above, 
+      There are plenty people aren't aware or unable to reach out the light. We need to help them, We need to bring them to the light.
+
+      By sharing this game and visiting our web platform. It is a big help and contribution to us.
+
+       
+      <template #footer>
+        <div class="footer-dialog">
+          <vs-button block gradient @click="offAnn"> Visit the web platform</vs-button>
+        </div>
+      </template>
+    </vs-dialog>
   </div>
 </template>
 
@@ -56,14 +75,12 @@
 </style>
 
 <script>
-
-
-
 export default {
   name: "LigtasPointsResults",
 
   data: () => ({
     result_status: 0,
+    active: false
   }),
 
   computed: {
@@ -87,10 +104,20 @@ export default {
         this.result_status = 4;
       }
     },
+
+    offAnn() {
+      this.active = false;
+      window.open('/', '_blank');
+    }
   },
 
   mounted() {
     this.showResults();
+    this.active = true;
+    document.querySelector('meta[property="og:url"]').setAttribute("content", "https://mavigator-mavigator.vercel.app/ligtas_points_meter");
+    document.querySelector('meta[property="og:title"]').setAttribute("content", `I GOT ${this.result_} % LIGTAS POINTS `);
+    document.querySelector('meta[property="og:description"]').setAttribute("content", `Try our Ligtas Points Quiz App`);
+    document.querySelector('meta[property="og:image"]').setAttribute("content", `https://wpshout.com/wp-content/uploads/2016/10/carl_sagan_mind_blown-e1476180767148-870x400.jpg`);
   },
 };
 </script>
