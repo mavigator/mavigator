@@ -6,6 +6,7 @@ import store from './store'
 import Vuesax from 'vuesax'
 import 'vuesax/dist/vuesax.css' //Vuesax styles
 import 'flexboxgrid/dist/flexboxgrid.min.css'
+import 'boxicons/css/boxicons.min.css'
 
 Vue.config.productionTip = false
 

@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import LigtasPoints from '../views/Quiz/LigtasPoints.vue'
+import LPResults from '../views/Quiz/LigtasPointsResults.vue'
 
 Vue.use(VueRouter)
 
@@ -15,6 +16,11 @@ const routes = [
     path: '/ligtas_points_meter',
     name: 'Ligtas Points',
     component: LigtasPoints
+  },
+  {
+    path: '/ligtas_points_meter_results/:results_data',
+    name: 'Ligtas Points Results',
+    component: LPResults
   },
   {
     path: '/about',
