@@ -44,13 +44,13 @@
     <div class="vertical-center">
       <div
         class="fb-share-button"
-        data-href="https://mavigator-mavigator.vercel.app/ligtas_points_meter_results/MTAw"
+        data-href="https://mavigator.vercel.app/ligtas_points_meter_results/MTAw"
         data-layout="button"
         data-size="large"
       >
         <a
           target="_blank"
-          href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmavigator-mavigator.vercel.app%2Fligtas_points_meter_results%2FMTAw&amp;src=sdkpreparse"
+          href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmavigator.vercel.app%2Fligtas_points_meter_results%2FMTAw&amp;src=sdkpreparse"
           class="fb-xfbml-parse-ignore"
           >Share</a
         >
@@ -145,7 +145,7 @@ export default {
       .querySelector('meta[property="og:url"]')
       .setAttribute(
         "content",
-        "https://mavigator-mavigator.vercel.app/ligtas_points_meter"
+        "https://mavigator.vercel.app/ligtas_points_meter"
       );
     document
       .querySelector('meta[property="og:title"]')
