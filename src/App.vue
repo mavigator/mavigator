@@ -12,54 +12,6 @@
   font-family: 'Roboto', sans-serif;
 }
 
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-
-/* Spacings */
-.mt-5 {
-  margin-top: 5%;
-}
-
-.ml-5 {
-  margin-left: 5%;
-}
-
-.mr-5 {
-  margin-right: 5%;
-}
-
-.mt-3 {
-  margin-top: 2%;
-}
-
-.mt-2 {
-  margin-top: 2%;
-}
-
-.m-3 {
-  margin: 3%;
-}
-.p-2 {
-  padding: 2%;
-}
-.p-1 {
-  padding: 1%;
-}
-
-html{
-  margin: 0 !important;
-}
-
 .text-anim-grd {
   background: #36d1dc; /* fallback for old browsers */
   background: -webkit-linear-gradient(
