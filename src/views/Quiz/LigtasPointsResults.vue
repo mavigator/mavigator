@@ -39,28 +39,28 @@
           alt="noice"
         />
       </div>
-      <div class="col-xs-12">
-        <div
+      
+    </div>
+
+    <div class="vertical-center">
+      <div
           class="fb-share-button"
           data-href="https://developers.facebook.com/docs/plugins/"
           data-layout="button"
           data-size="large"
         >
-          <a
+          <vs-button
+            icon
+            color="facebook"
             target="_blank"
-            href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"
-            class="fb-xfbml-parse-ignore"
-            >Share</a
+            href="https://mavigator-mavigator.vercel.app/ligtas_points_meter"
+            class="sub-t1"
           >
+            <i class='bx bxl-facebook-square sub-t1'></i>
+            Share
+          </vs-button>
         </div>
-      </div>
     </div>
-
-    <div
-      class="fb-share-button"
-      data-href="https://mavigator-mavigator.vercel.app/ligtas_points_meter"
-      data-layout="button_count"
-    ></div>
 
     <vs-dialog not-close prevent-close v-model="active">
       <template #header>
@@ -89,6 +89,20 @@
   font-size: 3em !important;
   font-family: "Roboto", sans-serif;
   font-weight: 900 !important;
+}
+
+.sub-t1 {
+  font-size: 2em !important;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900 !important;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 </style>
 
