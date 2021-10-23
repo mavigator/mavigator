@@ -39,24 +39,42 @@
           alt="noice"
         />
       </div>
+      <div class="col-xs-12">
+        <div
+          class="fb-share-button"
+          data-href="https://developers.facebook.com/docs/plugins/"
+          data-layout="button"
+          data-size="large"
+        >
+          <a
+            target="_blank"
+            href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"
+            class="fb-xfbml-parse-ignore"
+            >Share</a
+          >
+        </div>
+      </div>
     </div>
 
-    <div class="fb-share-button" 
-    data-href="https://mavigator-mavigator.vercel.app/ligtas_points_meter" 
-    data-layout="button_count">
-    </div>
+    <div
+      class="fb-share-button"
+      data-href="https://mavigator-mavigator.vercel.app/ligtas_points_meter"
+      data-layout="button_count"
+    ></div>
 
     <vs-dialog not-close prevent-close v-model="active">
       <template #header>
-        <h4 class="not-margin text-center">Thank you for playing<br /><b>LIGTAS POINTS METRE QUIZ GAME</b></h4>
+        <h4 class="not-margin text-center">
+          Thank you for playing<br /><b>LIGTAS POINTS METRE QUIZ GAME</b>
+        </h4>
       </template>
 
-      This simple quiz app is developed to measure your "LIGTAS POINTS", Ligtas Points is not focused about the salvation but the power how you really know the one above, 
-      There are plenty people aren't aware or unable to reach out the light. We need to help them, We need to bring them to the light.
+      This simple quiz app is developed to measure your "LIGTAS POINTS", Ligtas Points is
+      not focused about the salvation but the power how you really know the one above,
+      There are plenty people aren't aware or unable to reach out the light. We need to
+      help them, We need to bring them to the light. By sharing this game and visiting our
+      web platform. It is a big help and contribution to us.
 
-      By sharing this game and visiting our web platform. It is a big help and contribution to us.
-
-       
       <template #footer>
         <div class="footer-dialog">
           <vs-button block gradient @click="offAnn"> Visit the web platform</vs-button>
@@ -80,7 +98,7 @@ export default {
 
   data: () => ({
     result_status: 0,
-    active: false
+    active: false,
   }),
 
   computed: {
@@ -107,17 +125,31 @@ export default {
 
     offAnn() {
       this.active = false;
-      window.open('/', '_blank');
-    }
+      window.open("/", "_blank");
+    },
   },
 
   mounted() {
     this.showResults();
     this.active = true;
-    document.querySelector('meta[property="og:url"]').setAttribute("content", "https://mavigator-mavigator.vercel.app/ligtas_points_meter");
-    document.querySelector('meta[property="og:title"]').setAttribute("content", `I GOT ${this.result_} % LIGTAS POINTS `);
-    document.querySelector('meta[property="og:description"]').setAttribute("content", `Try our Ligtas Points Quiz App`);
-    document.querySelector('meta[property="og:image"]').setAttribute("content", `https://wpshout.com/wp-content/uploads/2016/10/carl_sagan_mind_blown-e1476180767148-870x400.jpg`);
+    document
+      .querySelector('meta[property="og:url"]')
+      .setAttribute(
+        "content",
+        "https://mavigator-mavigator.vercel.app/ligtas_points_meter"
+      );
+    document
+      .querySelector('meta[property="og:title"]')
+      .setAttribute("content", `I GOT ${this.result_} % LIGTAS POINTS `);
+    document
+      .querySelector('meta[property="og:description"]')
+      .setAttribute("content", `Try our Ligtas Points Quiz App`);
+    document
+      .querySelector('meta[property="og:image"]')
+      .setAttribute(
+        "content",
+        `https://wpshout.com/wp-content/uploads/2016/10/carl_sagan_mind_blown-e1476180767148-870x400.jpg`
+      );
   },
 };
 </script>
