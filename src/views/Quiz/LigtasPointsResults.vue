@@ -39,27 +39,22 @@
           alt="noice"
         />
       </div>
-      
     </div>
 
     <div class="vertical-center">
       <div
-          class="fb-share-button"
-          data-href="https://developers.facebook.com/docs/plugins/"
-          data-layout="button"
-          data-size="large"
+        class="fb-share-button"
+        data-href="https://mavigator-mavigator.vercel.app/ligtas_points_meter_results/MTAw"
+        data-layout="button"
+        data-size="large"
+      >
+        <a
+          target="_blank"
+          href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmavigator-mavigator.vercel.app%2Fligtas_points_meter_results%2FMTAw&amp;src=sdkpreparse"
+          class="fb-xfbml-parse-ignore"
+          >Share</a
         >
-          <vs-button
-            icon
-            color="facebook"
-            target="_blank"
-            href="https://mavigator-mavigator.vercel.app/ligtas_points_meter"
-            class="sub-t1"
-          >
-            <i class='bx bxl-facebook-square sub-t1'></i>
-            Share
-          </vs-button>
-        </div>
+      </div>
     </div>
 
     <vs-dialog not-close prevent-close v-model="active">
