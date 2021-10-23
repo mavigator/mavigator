@@ -60,12 +60,12 @@
     <vs-dialog not-close prevent-close v-model="active">
       <template #header>
         <h4 class="not-margin text-center">
-          Thank you for playing<br /><b>LIGTAS POINTS METRE QUIZ GAME</b>
+          Thank you for playing<br /><b>LIGTAS POINTS QUIZ GAME</b>
         </h4>
       </template>
 
       This simple quiz app is developed to measure your "LIGTAS POINTS", Ligtas Points is
-      not focused about the salvation but the power how you really know the one above,
+      not focused on the topic of salvation but the power of how you know the one above.
       There are plenty people aren't aware or unable to reach out the light. We need to
       help them, We need to bring them to the light. By sharing this game and visiting our
       web platform. It is a big help and contribution to us.

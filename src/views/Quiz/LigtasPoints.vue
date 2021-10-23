@@ -10,7 +10,7 @@
       <div class="row center-xs">
         <div class="col-xs-12 cc">
           <vs-button gradient size="xl" @click="startQuiz">
-            Take Ligtas Points Meter Quiz
+            Take Ligtas Points Quiz Game
           </vs-button>
         </div>
       </div>
@@ -20,7 +20,7 @@
       <div class="row p-2">
         <div class="col-xs-12 sub-t">
           <span class="text-anim-grd text-emphasis-brd" @click="init = false"
-            >LIGTAS POINTS METRE</span
+            >LIGTAS POINTS</span
           >
         </div>
       </div>
