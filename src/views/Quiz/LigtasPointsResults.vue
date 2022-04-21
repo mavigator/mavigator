@@ -44,7 +44,7 @@
     <div class="vertical-center">
       <div
         class="fb-share-button"
-        data-href="https://mavigator.vercel.app/ligtas_points_meter_results/MTAw"
+        data-href="https://papaya-otter-f450d5.netlify.app/ligtas_points_meter_results/MTAw"
         data-layout="button"
         data-size="large"
       >
@@ -145,7 +145,7 @@ export default {
       .querySelector('meta[property="og:url"]')
       .setAttribute(
         "content",
-        "https://mavigator.vercel.app/ligtas_points_meter"
+        "https://papaya-otter-f450d5.netlify.app/ligtas_points_meter"
       );
     document
       .querySelector('meta[property="og:title"]')
